@@ -15,7 +15,12 @@ nav ul {
 	padding: 0;
 	list-style: none;
 }
-
+p{
+	color: #bb86da;
+}
+pre{
+	color:#bb86da;
+}
 nav li {
 	display: inline-block;
 }
@@ -30,7 +35,7 @@ nav li a {
 }
 
 nav li a:hover {
-	background-color: rgb(64, 64, 155);
+	background-color: rgb(151, 151, 175);
 }
 
 a {
