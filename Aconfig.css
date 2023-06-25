@@ -37,7 +37,9 @@ nav li a {
 nav li a:hover {
 	background-color: rgb(151, 151, 175);
 }
-
+li{
+	color: #bb86da;
+}
 a {
 	color: antiquewhite;
 }
