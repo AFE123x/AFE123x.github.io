@@ -1,9 +1,14 @@
 body {
-	background-image: url("background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+	background: url('background.jpg');
+	background-size: stretch;
+   } 
+   
+h4{
+	color:#bb86da
 }
-
+h1{
+	color:#bb86da
+}
 nav {
 	background-color: #454ba3;
 	overflow: hidden;
