@@ -1,13 +1,16 @@
 body {
 	background: url('background.jpg');
-	background-size: stretch;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
    } 
    
 h4{
-	color:#bb86da
+	color:#000000
 }
 h1{
-	color:#bb86da
+	color:#000000
 }
 nav {
 	background-color: #454ba3;
@@ -21,10 +24,11 @@ nav ul {
 	list-style: none;
 }
 p{
-	color: #bb86da;
+	color: #000000;
+	font-size:20px;
 }
 pre{
-	color:#bb86da;
+	color:#000000;
 }
 nav li {
 	display: inline-block;
@@ -43,7 +47,7 @@ nav li a:hover {
 	background-color: rgb(151, 151, 175);
 }
 li{
-	color: #bb86da;
+	color: #000000;
 }
 a {
 	color: antiquewhite;
@@ -119,3 +123,17 @@ input[type="submit"]:hover {
   br {
 	line-height: 0.1; /* Adjust the value as needed */
   }
+  button {
+	background-color: #d579f1; /* Set the background color */
+	color: white; /* Set the text color */
+	font-size: 16px; /* Set the font size */
+	padding: 10px 20px; /* Set the padding */
+	border: none; /* Remove the border */
+	border-radius: 3px; /* Add border radius */
+	cursor: pointer; /* Add a cursor on hover */
+  }
+  
+  button:hover {
+	background-color: #45a049; /* Change the background color on hover */
+  }
+  

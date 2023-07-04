@@ -111,6 +111,7 @@ function pomoinc(difference){
 if(pomodesired + difference >= 0){
     pomodesired += difference;
 document.getElementById("pomodestime").innerHTML = "Desired time: " + pomodesired + " minutes";
+document.getElementById("timeboiboi").innerHTML = pomodesired + ":00";
 }
 }
 function totaltimer(){
@@ -134,29 +135,33 @@ function togglepause(){
         document.getElementById("pause").innerHTML = "Continue";
     }
 }
-  function pomodorotimer() {
+function pomodorotimer() {
     reset = false;
-    var time = pomodesired * 60;
-    
+    var endTime = new Date();
+    endTime.setMinutes(endTime.getMinutes() + pomodesired);
+  
     function updateTimer() {
-      
-      var minutes = Math.floor(time / 60);
-      var seconds = time % 60;
-      if (seconds < 10) {
-        document.getElementById("timeboiboi").innerHTML = minutes + ":0" + seconds;
-      } else {
-        document.getElementById("timeboiboi").innerHTML = minutes + ":" + seconds;
-      }
+      var currentTime = new Date();
+      var timeRemaining = Math.floor((endTime - currentTime) / 1000);
+  
       if (reset) {
         document.getElementById("timeboiboi").innerHTML = pomodesired + ":00";
         return;
       }
-      if (time > 0) {
-        if(!pause){
-            time--;
+  
+      if (timeRemaining > 0) {
+        var minutes = Math.floor(timeRemaining / 60);
+        var seconds = timeRemaining % 60;
+  
+        if (seconds < 10) {
+          document.getElementById("timeboiboi").innerHTML = minutes + ":0" + seconds;
+        } else {
+          document.getElementById("timeboiboi").innerHTML = minutes + ":" + seconds;
         }
-        
-        setTimeout(updateTimer, 1000); // Delay of 1 second (1000ms)
+  
+        if (!pause) {
+          setTimeout(updateTimer, 1000); // Delay of 1 second (1000ms)
+        }
       } else {
         playaudio(); // Call the playaudio() function when the timer is done
       }
@@ -164,6 +169,7 @@ function togglepause(){
   
     updateTimer();
   }
+  
   
   
   

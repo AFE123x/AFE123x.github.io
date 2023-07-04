@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>Music Page</title>
+    <link rel="stylesheet" href = "../Aconfig.css" type="text/css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../CS/CS.html">Computer Science</a></li>
+            <li><a href="MUSIC.html">Music</a></li>
+            <li><a href="../MISC.html">misc.</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Music Page</h1>
+    <h2>Music Theory IV Final Project</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WfPQ9g6YySE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>For Theory 4, I had to write a final project. In Music Theory 4, we learned about abstract music types. There's a John Cage piece where he just sits at a piano, doing nothing for 4 minutes and 33 seconds. It's not the usual notes. I was inspired by this and made a composition using Java. It plays random clips at random times for 5 minutes. I was fascinated by it as it'll sound different every time you play it. </p>
+    <hr>
+    <h2>Autumn Leaves Bassoon Rearrangement</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K9IT86EuMKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>This composition is a project I embarked on before starting college. My passion for jazz and guitar peaked during that time, driving me to take on a unique endeavor. I rearranged the classic jazz tune "Autumn Leaves" specifically for five bassoons. Mixing a well-known composition like "Autumn Leaves" presented an exciting challenge. I had to carefully adapt the melody, harmonies, and chord progressions to suit the unique qualities and capabilities of the bassoon while still maintaining the essence of the original piece.</p>
+<ul>
+    <li>Experimenting with different voicings</li>
+    <li>Exploring the tonal range of the bassoon</li>
+    <li>Considering the expressive techniques that would enhance the interpretation of the music</li>
+</ul>
+<p>
+It required a deep understanding of the jazz genre and the intricacies of the bassoon as an instrument. Ultimately, I successfully crafted a stunning arrangement of "Autumn Leaves" that showcased the versatility and melodic richness of the bassoon ensemble. It was a gratifying experience to bring together my passion for jazz, guitar, and the bassoon through this project. The finished arrangement stands as a testament to my musical creativity and technical proficiency, and I am proud to include it in my musical portfolio.</p>
+
+</body>
+<script>
+checkTime();
+function checkTime() {
+    var currentDate = new Date();
+    var currentHour = currentDate.getHours();
+    var currentMinute = currentDate.getMinutes();
+    var currentSecond = currentDate.getSeconds();
+  
+    var currentTimeInSeconds = (currentHour * 3600) + (currentMinute * 60) + currentSecond;
+  
+    var startTimeInSeconds = (7 * 3600); // 7:00 am in seconds
+    var endTimeInSeconds = (18 * 3600); // 6:00 pm in seconds
+  
+    if (currentTimeInSeconds >= startTimeInSeconds && currentTimeInSeconds <= endTimeInSeconds) {
+        document.body.style.backgroundImage = "url('../background.jpg')";
+    }
+    else{
+        document.body.style.backgroundImage = "url('../Nightbackground.jpg')";
+    }
+  }
+
+
+</script>
