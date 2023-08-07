@@ -1,4 +1,24 @@
 /* general styling */
+nav{
+    background-color: #A7CAB1;
+    text-align: center;
+    border-radius: 20px;
+}
+nav li{
+display: inline-block;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #38369A;
+font-size: 20px;
+padding-bottom: 10px;
+padding-top: 10px;
+border-radius: 10px;
+text-align: center;
+width: 100px;
+height: 25px;
+}
+nav li:hover{
+    background-color: #AF3E4D;
+}
 body{
     background-color: #B8B8D1;
 }
