@@ -1,8 +1,11 @@
 /* general styling */
 nav{
-    background-color: #A7CAB1;
+    background-color: #F4B942;
     text-align: center;
     border-radius: 20px;
+}
+iframe{
+    text-align: center;
 }
 nav li{
 display: inline-block;
@@ -17,16 +20,17 @@ width: 100px;
 height: 25px;
 }
 nav li:hover{
-    background-color: #AF3E4D;
+    background-color: #ED6A5A;
 }
 body{
-    background-color: #B8B8D1;
+    background-color: #121C77;
 }
 h1{
     text-align: center;
     color: #38369A;
     font-family: 'Lobster', cursive;
     font-size: 40px;
+    
 }
 
 p{
@@ -34,17 +38,19 @@ p{
 }
 /* for the top part */
 .top{
-    background-color: #AF3E4D;
+    /* opacity: 0.5; */
+    background-color: #ED6A5A;
     border-radius: 20px;
     padding-bottom: 10px;
 }
 /* everything with the experience part */
 .experience{
     /* display: inline; */
-    background-color: #F1BF98;
+    background-color: #C8ADC0;
     width: 100%;
     border-radius: 20px;
 }
+
 .WE{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -63,11 +69,13 @@ p{
     margin-bottom: 20px;
 }
 .projects{
-    background-color: #A7CAB1;
+    background-color: #F4B942;
     border-radius: 20px;
     padding-bottom: 10px;
+
+    
 }
 .projects h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:#FF6B6C;
+    color:#839788;
 }

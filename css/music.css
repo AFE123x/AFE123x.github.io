@@ -1,0 +1,68 @@
+/* general styling */
+nav{
+    background-color: #F4B942;
+    text-align: center;
+    border-radius: 20px;
+}
+nav li{
+display: inline-block;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: #38369A;
+font-size: 20px;
+padding-bottom: 10px;
+padding-top: 10px;
+border-radius: 10px;
+text-align: center;
+width: 100px;
+height: 25px;
+}
+
+nav li:hover{
+    background-color: #ED6A5A;
+}
+body{
+    background-color: #121C77;
+}
+h1{
+    text-align: center;
+    color: #3C362A;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    
+}
+
+p{
+font-size: 20px;
+}
+.top{
+    background-color: #839788;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    
+}
+.iframe-container {
+    display: none; /* Hide the container by default */
+  }
+
+  /* Apply styles only when viewport width is J pixels or more */
+  @media (min-width: 720px) {
+    .iframe-container {
+      display: block; /* Show the container */
+    }
+  }
+.portfolio{
+    background-color: #ED6A5A; 
+    border-radius: 20px;
+    padding-top: 5px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.theory{
+    display: flex;
+}
+.autumn-leaves{
+    display: flex;
+}
+.portfolio p {
+    margin-left: 15px;
+}
