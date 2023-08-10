@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
     <div>
+        <script src="js/script.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     </div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script type="module" src="js/script.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>AFE123x - Home</title>
+   
 <!-- <script type="module" src="main.js"></script> -->
 
 <!-- this will interpret the js only once html is loaded. -->
@@ -27,19 +30,19 @@
             <li>misc</li>
         </ul>
         <p>Some of these buttons don't work, mb.</p>
-    </nav>
-   <div class="top">
-    <h1>Arun Jose Felix</h1>
-    <p>Hello, welcome to my website. My name is Arun Felix, a rising Junior at Rutgers University-New Brunswick. I'm studying both Computer Science and Bassoon Performance. It's an exciting combination of career paths, but I'm passionate about both. In CS, I have a passion for embedded systems. Interacting with hardware using software intrigues me, and I enjoy making cool things out of it. I'm also interested in computer audio, graphics, and architecture in general. Outside of academics, I'm a massive car nut and enjoy working on my car, love reading and learning new things, and I'm also passionate about aviation. I'm currently studying to acquire my Private Pilots License, and I plan to eventually do Embedded Software Engineering for an Aviation company like Garmin. Either that or fly commercially. 
-    </p>
-    <p>On this website, you can find general info regarding my background, skills, and some cool things I decide to work on, which I intend to use. I'm also learning web development, as it's desirable in the industry, so it justifies making this website. </p>
-   </div>
-   <div class="gridboi">
-
-<div class="gridboi">
-   <div class="experience">
-    <h1>Experience and club activity</h1>
-    <div class="WE">
+        </nav>
+        <div class="top">
+        <h1>Arun Jose Felix</h1>
+        <p>Hello, welcome to my website. My name is Arun Felix, a rising Junior at Rutgers University-New Brunswick. I'm studying both Computer Science and Bassoon Performance. It's an exciting combination of career paths, but I'm passionate about both. In CS, I have a passion for embedded systems. Interacting with hardware using software intrigues me, and I enjoy making cool things out of it. I'm also interested in computer audio, graphics, and architecture in general. Outside of academics, I'm a massive car nut and enjoy working on my car, love reading and learning new things, and I'm also passionate about aviation. I'm currently studying to acquire my Private Pilots License, and I plan to eventually do Embedded Software Engineering for an Aviation company like Garmin. Either that or fly commercially. 
+        </p>
+        <p>On this website, you can find general info regarding my background, skills, and some cool things I decide to work on, which I intend to use. I'm also learning web development, as it's desirable in the industry, so it justifies making this website. </p>
+        </div>
+        <div class="gridboi">
+        
+        <div class="gridboi">
+        <div class="experience">
+        <h1>Experience and club activity</h1>
+        <div class="WE">
         <div class="gridboi">
             <h3>Rutgers Symphonic Winds</h3>
             <h4>Principal Bassoonist</h4>
@@ -92,27 +95,34 @@
                     <li>video edited the movie, missouri loves company</li>
                 </ul>
             </div>
-    </div>
-   </div>
-    
-<div class="projects">
-    <h1>Projects</h1>
-    <div>
-    <h3>IEEE Micromouse</h3>
-    <p>This project was developed as a part of IEEE's micromouse team. A micro mouse is a robot designed to navigate a maze. We created a PCB using EasyEDA and picked components based on specific parameters to achieve this. We used a Teensy 4.1 microcontroller as it's more powerful and smaller than the Arduino Nano. Regarding algorithms, we utilized A*, a variant of Dijkstra's algorithm but added a new heuristic to ensure the mouse was heading in the correct direction, resulting in less trial-and-error. I worked on Interfacing the Time-Of-Flight sensors via I<sub>2</sub>C and the shift register. Programming was done in C++ using Arduino's Abstraction Layer. We competed at New York Institute of Technology.</p>
-    </div>
-    <div>
+        </div>
+        </div>
+        
+        <div class="projects">
+        <h1>Projects</h1>
+        <div>
+            <a href="https://afe123x.github.io/Accelerating-Metronome/" target="_blank"><h3>Accelerating Metronome</h3></a>
+            <p>One of the most infuriating aspects of music is learning a new piece from the ground up. I have to take the metronome out, choose a tempo, then increase the tempo. It's very cumbersome, and I hoped for a more systematic approach. I like accelerating metronomes because they're simplistic and can yield great results. Unfortunately, others don't share this same thought, and only so many options are available. I use an app that contains this metronome, but you can only choose the tempo's acceleration based on how much time you want to spend, or beats/second<sup>2</sup>. I wish there were a way to accelerate one beat every couple of clicks. I decided to invest more time learning about web development and eventually made this website. I'm very proud of this project after spending a week on web dev. There's much room for improvement, but this is a good start. </p>
+            </div>
+        <div>
+        <h3>IEEE Micromouse</h3>
+        <p>This project was developed as a part of IEEE's micromouse team. A micro mouse is a robot designed to navigate a maze. We created a PCB using EasyEDA and picked components based on specific parameters to achieve this. We used a Teensy 4.1 microcontroller as it's more powerful and smaller than the Arduino Nano. Regarding algorithms, we utilized A*, a variant of Dijkstra's algorithm but added a new heuristic to ensure the mouse was heading in the correct direction, resulting in less trial-and-error. I worked on Interfacing the Time-Of-Flight sensors via I<sub>2</sub>C and the shift register. Programming was done in C++ using Arduino's Abstraction Layer.</p>
+        </div>
+        <div>
         <h3>RUPA Bedwars Project</h3>
         <p>This project was developed during the IEEE Social Goods Hackathon in March 2023. This program was designed in Java, using Java's scanner object to read data from a text file and SWING to implement a more user-friendly interface—a massive motivation for learning Web development. We utilized a Binary Heap based Priority Queue to rank the teams in log<sub>2</sub>n time.</p>
         <p>Time to talk from a less technical perspective. Every year, Rutgers Programming Association holds a Bed Wars competition. Teams of 3 will race, where two members drag a bed with one person sitting on it. In addition to the speed, teams are judged by their uniforms and the bed. Beforehand, the process consisted of the judges starting a stopwatch, stopping the stopwatch, inputting the data into a spreadsheet, and so on. We put that task into the convenient form factor of a program. It implements a stopwatch, records the data, automatically rewards points where appropriate, and calculates based on the judge's uniform, bed, and donation ratings. Finally, it will print out the rankings on a new .txt file. </p>
-    </div>
-    <div>
+        </div>
+        <div>
         <a href="https://github.com/AFE123x/Music-Listening-Quiz-Tool" target="_blank"><h3>Music Listening Quiz Tool</h3></a> 
         
         <p>I developed this Listening Quiz tool when I was taking music history. In this class, we had what was called Listening Quizzes. Essentially, the professor would randomly play an excerpt of music, and the student would write the piece's composer, name, period, year, and style of music. I wanted to gain a better understanding of Object Oriented Programming and Java.Util.Scanner, so I developed this tool that would randomly pick one of the pieces provided by the user, then play it randomly for 30-60 seconds. Afterward, it will prompt the user to input the information needed. </p>
-    </div>
+        </div>
+        
+        </div>
+        <div class="DOCU">
 
-</div>
+        </div>
 </body>
 
 </html>
