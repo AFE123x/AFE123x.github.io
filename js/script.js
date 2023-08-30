@@ -1,4 +1,4 @@
-import employee from "./employee.js";
+import employee from "./employee.js"; //Feels like I'm usin react, lol. 
 
 const timmy = new employee('timmy',34,1232);
 console.log(timmy);
@@ -39,3 +39,5 @@ NA.innerHTML=`<h1>skill issue</h1>`;
   * document.querySelector("body").style.backgroundColor="pink";
   * changes the background of webpage to pink. 
   */
+
+
