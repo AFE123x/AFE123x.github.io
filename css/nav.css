@@ -1,0 +1,32 @@
+body {
+    margin: 0; /* Remove default body margin */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: lightgray; Set the background color of the navbar */
+  }
+  
+  #title {
+    order: 0; /* Set the order to 0 to keep it on the left */
+  }
+  
+  #navigation {
+    display: flex;
+  }
+  
+  #navigation h2 {
+    margin-left: 20px; /* Add some space between menu items */
+    transition: background-color 0.6s ease; /* Smooth transition for the hover effect */
+    border-radius: 5px;
+  }
+  
+  #navigation h2:hover {
+    background-color: rgb(138, 138, 139);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
