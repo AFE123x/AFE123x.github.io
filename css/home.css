@@ -1,29 +1,17 @@
-#home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height:100vh
-  }
+#collection {
+    display: inline-flex;
+    justify-content: space-evenly;
+}
 
-#contact{
-    display: flex;
-    flex-direction: column;
-    place-self: center;
-    align-self: center;
+#collection div {
+    width: 50%; /* Split the container into two equal parts */
 }
-a {
-    text-decoration: none;
-  }
+#cool{
+    text-align: center;
+}
 #icons{
-    display: flex;
-    justify-content: center;
+    display: inline;
 }
-#contact img{
-    width: 25px;
-    height:auto;
-}
-#description{
-    align-self: center;
-}
-#description p{
-    text-align: justify;
+#icons img{
+    width: 30px;
 }

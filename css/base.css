@@ -1,0 +1,40 @@
+header {
+    background-color: orange;
+    margin: 0;
+    padding:10px;
+    margin-top:-10px;
+    margin-left: -9px;
+    text-align: left;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999; /* Ensure it's on top of other elements */
+}
+nav {
+    background-color: black;
+    margin-left: -15px;
+    margin-right: -10px;
+}
+nav ul{
+    color:orange;
+    display: inline-flex;
+    margin-top:0px;
+    margin-right:-10px;
+    margin-left:-10px;
+    /* margin-top -16, margin-right: -10, margin left: -8 */
+}
+
+nav li {
+    padding-right: 20px;
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+nav li:hover {
+    background-color: rgb(122, 83, 9);
+    padding-top:10px;
+    border-radius: 10px;
+    padding:10px;
+    
+}
+
